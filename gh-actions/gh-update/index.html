@@ -12,25 +12,29 @@
         <link rel="prev" href="../gh-deploy/">
       
       
-        <link rel="next" href="../gh-errors/">
+        <link rel="next" href="../automatic/">
+      
       
       <link rel="icon" href="../../loop-logo.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>GitHub Update - LoopDocs</title>
+        <title>Update/Rebuild with Browser - LoopDocs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a6bdf11c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -75,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#update-loop-using-github-actions" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -97,6 +101,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub Update
+              Update/Rebuild with Browser
             
           </span>
         </div>
@@ -118,33 +123,34 @@
     
       
         <form class="md-header__option" data-md-component="palette">
-          
-            
-            
-            
-            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-            
-              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-              </label>
-            
-          
-            
-            
-            
-            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-            
-              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-              </label>
-            
-          
-        </form>
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
       
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -153,12 +159,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -191,28 +200,35 @@
         
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
 
-
-  <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
+      </a>
+    </li>
+  
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/overview-intro/" class="md-tabs__link">
+          
+  
+  Intro
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../intro/overview-intro/" class="md-tabs__link">
-        Intro
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -221,141 +237,162 @@
   
     
   
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../gh-overview/" class="md-tabs__link">
+          
+  
+  Build with Browser
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../gh-overview/" class="md-tabs__link md-tabs__link--active">
-        Browser Build
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../build/overview/" class="md-tabs__link">
-        Mac-Xcode Build
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../build/overview/" class="md-tabs__link">
+          
+  
+  Build with Mac
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
-        Set Up
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../operation/loop/open-loop/" class="md-tabs__link">
-        Operate
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../loop-3/loop-3-overview/" class="md-tabs__link">
+          
+  
+  Set Up
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../troubleshooting/overview/" class="md-tabs__link">
-        Troubleshoot
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../version/overview-version/" class="md-tabs__link">
-        Version
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../operation/loop/open-loop/" class="md-tabs__link">
+          
+  
+  Operate
 
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../nightscout/overview/" class="md-tabs__link">
-        Nightscout
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../faqs/overview-faqs/" class="md-tabs__link">
-        FAQs
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
         
   
   
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/overview/" class="md-tabs__link">
+          
+  
+  Troubleshoot
 
+        </a>
+      </li>
+    
+  
 
-  <li class="md-tabs__item">
-    <a href="../../translate/" class="md-tabs__link">
-      Translation
-    </a>
-  </li>
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../version/overview-version/" class="md-tabs__link">
+          
+  
+  Version
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nightscout/overview/" class="md-tabs__link">
+          
+  
+  Nightscout
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../faqs/overview-faqs/" class="md-tabs__link">
+          
+  
+  FAQs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../translate/" class="md-tabs__link">
+        
+  
+    
+  
+  Translation
+
+      </a>
+    </li>
+  
 
       
     </ul>
@@ -380,6 +417,7 @@
                   <div class="md-sidebar__inner">
                     
 
+
   
 
 
@@ -397,14 +435,18 @@
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
       </a>
     </li>
   
@@ -412,282 +454,437 @@
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-          Intro
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_2">
-          <span class="md-nav__icon md-icon"></span>
-          Intro
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
           
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../intro/overview-intro/" class="md-nav__link">
-        LoopDocs Overview
+        
+  
+  <span class="md-ellipsis">
+    LoopDocs Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../intro/loopdocs-how-to/" class="md-nav__link">
-        LoopDocs How-to
+        
+  
+  <span class="md-ellipsis">
+    LoopDocs How-to
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Requirements
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../intro/requirements/" class="md-nav__link">
-        Requirements
+        
+  
+  <span class="md-ellipsis">
+    Requirements Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step2/" class="md-nav__link">
-        Compatible iPhone/iPod
+      <a href="../../build/phone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible iPhone
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step3/" class="md-nav__link">
-        Compatible Pump
+      <a href="../../build/pump/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible Pump
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step4/" class="md-nav__link">
-        Compatible CGM
+      <a href="../../build/cgm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible CGM
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step5/" class="md-nav__link">
-        RileyLink
+      <a href="../../build/rileylink/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RileyLink
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step6/" class="md-nav__link">
-        Apple Developer Program
+      <a href="../../build/apple-developer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apple Developer Program
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step10/" class="md-nav__link">
-        Test Settings
+      <a href="../../build/test-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Settings
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step11/" class="md-nav__link">
-        Loop Data
+      <a href="../../build/loop-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop Data
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step12/" class="md-nav__link">
-        Meet the Community
+      <a href="../../build/community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meet the Community
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
     
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-          Browser Build
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Browser Build
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Build with Browser
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Build with Browser
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../gh-overview/" class="md-nav__link">
-        GitHub Build Overview
+        
+  
+  <span class="md-ellipsis">
+    Browser Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gh-quick-start/" class="md-nav__link">
-        GitHub Quick-Start
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../gh-first-time/" class="md-nav__link">
-        GitHub First-Time
+        
+  
+  <span class="md-ellipsis">
+    Configure to use Browser
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gh-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errors with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../gh-deploy/" class="md-nav__link">
-        GitHub Deploy
+        
+  
+  <span class="md-ellipsis">
+    Install on Phone
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
@@ -700,12 +897,24 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          GitHub Update
+          
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Browser
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        GitHub Update
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Browser
+  </span>
+  
+
       </a>
       
         
@@ -724,19 +933,40 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#update-loop-using-github-actions" class="md-nav__link">
-    Update Loop using GitHub Actions
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-update" class="md-nav__link">
-    GitHub Build Update
+  <a href="#when-to-update-or-rebuild" class="md-nav__link">
+    When to Update or Rebuild
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Build Update">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-update-or-rebuild" class="md-nav__link">
+    How to Update or Rebuild
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Update or Rebuild">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accept-agreements" class="md-nav__link">
+    Accept Agreements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renew-certificate" class="md-nav__link">
+    Renew Certificate
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
@@ -746,8 +976,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-loop" class="md-nav__link">
-    Build Loop
+  <a href="#build-the-loop-app" class="md-nav__link">
+    Build the Loop App
   </a>
   
 </li>
@@ -772,8 +1002,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-details" class="md-nav__link">
-    GitHub Build Details
+  <a href="#choose-previous-build" class="md-nav__link">
+    Choose Previous Build
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Previous Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-test-details" class="md-nav__link">
+    Add Test Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-previous-build" class="md-nav__link">
+    Select a Previous Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-loop-app-build-details" class="md-nav__link">
+    The Loop App Build Details
   </a>
   
 </li>
@@ -787,8 +1044,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regenerate-github-token" class="md-nav__link">
-    Regenerate GitHub Token
+  <a href="#modify-personal-access-token" class="md-nav__link">
+    Modify Personal Access Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-token" class="md-nav__link">
+    Regenerate Token
   </a>
   
 </li>
@@ -806,56 +1070,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-for-dev" class="md-nav__link">
-    GitHub Build for dev
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Build for dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#one-time-changes" class="md-nav__link">
-    One-Time Changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-current-branches" class="md-nav__link">
-    Check Current Branches
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-branch" class="md-nav__link">
-    Add Branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-branch" class="md-nav__link">
-    Update Branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-branch" class="md-nav__link">
-    Build Branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-default-branch" class="md-nav__link">
-    Change Default Branch
+  <a href="#build-development-version" class="md-nav__link">
+    Build Development Version
   </a>
   
 </li>
@@ -867,1477 +1083,2283 @@
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../gh-errors/" class="md-nav__link">
-        GitHub Errors
+      <a href="../automatic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Automatic Update & Build
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize using Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edit-browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build-dev-browser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop dev with Browser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../gh-other-apps/" class="md-nav__link">
-        Other Apps
+        
+  
+  <span class="md-ellipsis">
+    Build Other Apps with Browser
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-          Mac-Xcode Build
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Mac-Xcode Build
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
           
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Build with Mac
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Build with Mac
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../build/overview/" class="md-nav__link">
-        Mac-Xcode Build Overview
+        
+  
+  <span class="md-ellipsis">
+    Mac Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step1/" class="md-nav__link">
-        Compatible Computer
+      <a href="../../build/computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compatible Computer
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step8/" class="md-nav__link">
-        Download Xcode
+      <a href="../../build/xcode-version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcode Version
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step9/" class="md-nav__link">
-        Xcode Preferences
+      <a href="../../build/xcode-settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xcode Settings
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/step14/" class="md-nav__link">
-        Build Loop
+      <a href="../../build/build-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/build_errors/" class="md-nav__link">
-        Oh dear! Build errors?
+      <a href="../../build/build-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oh dear! Build errors?
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../build/updating/" class="md-nav__link">
-        Updating/Rebuilding
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild with Mac
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/custom-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize using Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/edit-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-dev-mac/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Loop dev with Mac
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../build/build-free-loop/" class="md-nav__link">
-        Build Free Loop
+        
+  
+  <span class="md-ellipsis">
+    Build Free Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../build/testflight-xcode/" class="md-nav__link">
-        TestFlight from Xcode
+        
+  
+  <span class="md-ellipsis">
+    TestFlight from Xcode
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-          Set Up
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Set Up
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
           
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Set Up
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Set Up
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/loop-3-overview/" class="md-nav__link">
-        Overview
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/onboarding/" class="md-nav__link">
-        Onboarding
+        
+  
+  <span class="md-ellipsis">
+    Onboarding
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/add-cgm/" class="md-nav__link">
-        Add CGM
+        
+  
+  <span class="md-ellipsis">
+    Add CGM
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/add-pump/" class="md-nav__link">
-        Add Pump
+        
+  
+  <span class="md-ellipsis">
+    Add Pump
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/settings/" class="md-nav__link">
-        Settings
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/therapy-settings/" class="md-nav__link">
-        Therapy Settings
+        
+  
+  <span class="md-ellipsis">
+    Therapy Settings
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/services/" class="md-nav__link">
-        Optional: Services
+        
+  
+  <span class="md-ellipsis">
+    Optional: Services
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../loop-3/displays_v3/" class="md-nav__link">
-        Displays
+      <a href="../../loop-3/displays-v3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Displays
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/rileylink/" class="md-nav__link">
-        RileyLink Display
+        
+  
+  <span class="md-ellipsis">
+    RileyLink Display
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/omnipod/" class="md-nav__link">
-        Omnipod Pump
+        
+  
+  <span class="md-ellipsis">
+    Omnipod Pump
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/medtronic/" class="md-nav__link">
-        Medtronic Pump
+        
+  
+  <span class="md-ellipsis">
+    Medtronic Pump
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../loop-3/features/" class="md-nav__link">
-        Features
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
-          Loop 2: Set Up App
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_13">
-          <span class="md-nav__icon md-icon"></span>
-          Loop 2: Set Up App
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
+        
           
+          <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Loop 2: Set Up App
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_13">
+            <span class="md-nav__icon md-icon"></span>
+            Loop 2: Set Up App
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/overview/" class="md-nav__link">
-        Loop 2 Overview
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../build/health/" class="md-nav__link">
-        Loop 2 Health Permissions
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Health Permissions
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
-          Loop 2 Add Pump
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_13_3">
-          <span class="md-nav__icon md-icon"></span>
-          Loop 2 Add Pump
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13_3" >
+        
           
+          <label class="md-nav__link" for="__nav_5_13_3" id="__nav_5_13_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Pump
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_13_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_13_3">
+            <span class="md-nav__icon md-icon"></span>
+            Loop 2 Add Pump
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/mdt-pump/" class="md-nav__link">
-        Loop 2 Add Medtronic
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Medtronic
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/omnipod-pump/" class="md-nav__link">
-        Loop 2 Add Omnipod
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add Omnipod
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/cgm/" class="md-nav__link">
-        Loop 2 Add CGM
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Add CGM
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/configurations/" class="md-nav__link">
-        Loop 2 Configuration
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Configuration
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../operation/loop-settings/services_v2/" class="md-nav__link">
-        Loop 2 Services
+      <a href="../../operation/loop-settings/services-v2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Services
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/displays/" class="md-nav__link">
-        Loop 2 Displays
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Displays
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop-settings/pump-commands/" class="md-nav__link">
-        Loop 2 Pump Settings
+        
+  
+  <span class="md-ellipsis">
+    Loop 2 Pump Settings
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          Operate
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Operate
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
           
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Operate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Operate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop/open-loop/" class="md-nav__link">
-        Open Loop
+        
+  
+  <span class="md-ellipsis">
+    Open Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop/close-loop/" class="md-nav__link">
-        Closed Loop
+        
+  
+  <span class="md-ellipsis">
+    Closed Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/carbs/" class="md-nav__link">
-        Meal Entries
+        
+  
+  <span class="md-ellipsis">
+    Meal Entries
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/bolus/" class="md-nav__link">
-        Bolus
+        
+  
+  <span class="md-ellipsis">
+    Bolus
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../operation/features/workout/" class="md-nav__link">
-        Overrides
+      <a href="../../operation/features/overrides/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overrides
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/watch/" class="md-nav__link">
-        Apple Watch
+        
+  
+  <span class="md-ellipsis">
+    Apple Watch
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/notifications/" class="md-nav__link">
-        Loop Notifications
+        
+  
+  <span class="md-ellipsis">
+    Loop Notifications
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/premeal/" class="md-nav__link">
-        Pre-Meal Target
+        
+  
+  <span class="md-ellipsis">
+    Pre-Meal Target
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/ice/" class="md-nav__link">
-        Using ICE Info
+        
+  
+  <span class="md-ellipsis">
+    Meal Review
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/widget/" class="md-nav__link">
-        iPhone Widget
+        
+  
+  <span class="md-ellipsis">
+    iPhone Widget
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/loop/looptips/" class="md-nav__link">
-        Loop Tips
+        
+  
+  <span class="md-ellipsis">
+    Loop Tips
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
-          Algorithm
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6_12">
-          <span class="md-nav__icon md-icon"></span>
-          Algorithm
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_12" >
+        
           
+          <label class="md-nav__link" for="__nav_6_12" id="__nav_6_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algorithm
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_12">
+            <span class="md-nav__icon md-icon"></span>
+            Algorithm
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/overview/" class="md-nav__link">
-        Algorithm Overview
+        
+  
+  <span class="md-ellipsis">
+    Algorithm Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/bolus/" class="md-nav__link">
-        Bolus Recommendations
+        
+  
+  <span class="md-ellipsis">
+    Bolus Recommendations
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/prediction/" class="md-nav__link">
-        Glucose Prediction
+        
+  
+  <span class="md-ellipsis">
+    Glucose Prediction
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/algorithm/temp-basal/" class="md-nav__link">
-        Automated Adjustments
+        
+  
+  <span class="md-ellipsis">
+    Automated Adjustments
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-          Troubleshoot
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Troubleshoot
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
           
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Troubleshoot
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshoot
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../troubleshooting/overview/" class="md-nav__link">
-        Troubleshooting Overview
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../troubleshooting/loop-crashing/" class="md-nav__link">
-        Loop App Crashes
+        
+  
+  <span class="md-ellipsis">
+    Loop App Crashes
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/yellow-red-loop/" class="md-nav__link">
-        Red Loop
+      <a href="../../troubleshooting/red-loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Red Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../troubleshooting/pod-pairing/" class="md-nav__link">
-        Pod Pairing Failures
+        
+  
+  <span class="md-ellipsis">
+    Pod Pairing Failures
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../troubleshooting/omnipod-faults/" class="md-nav__link">
-        Omnipod Faults
+        
+  
+  <span class="md-ellipsis">
+    Omnipod Faults
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../troubleshooting/pump-errors/" class="md-nav__link">
-        MDT Pump Errors
+        
+  
+  <span class="md-ellipsis">
+    MDT Pump Errors
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../operation/features/battery/" class="md-nav__link">
-        MDT Pump Battery
+        
+  
+  <span class="md-ellipsis">
+    MDT Pump Battery
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-          Version
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
-          Version
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
           
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Version
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Version
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/overview-version/" class="md-nav__link">
-        Version Overview
+        
+  
+  <span class="md-ellipsis">
+    Version Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/releases/" class="md-nav__link">
-        Loop Releases
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../build/code_customization/" class="md-nav__link">
-        Customize Your Loop
+      <a href="../../version/code-custom-edits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Edits
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../gh-customize/" class="md-nav__link">
-        Customize with GitHub
+      <a href="../../version/build-time-flag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build-Time Flag
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/simulator/" class="md-nav__link">
-        Simulator Build
+        
+  
+  <span class="md-ellipsis">
+    Simulator Build
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/development/" class="md-nav__link">
-        Loop Development
+        
+  
+  <span class="md-ellipsis">
+    Loop Development
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/build-dev/" class="md-nav__link">
-        Build Loop Dev
+        
+  
+  <span class="md-ellipsis">
+    Build Dev
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../version/loopworkspace/" class="md-nav__link">
-        LoopWorkspace
+        
+  
+  <span class="md-ellipsis">
+    LoopWorkspace
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          Nightscout
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
-          Nightscout
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
           
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Nightscout
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Nightscout
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../nightscout/overview/" class="md-nav__link">
-        Nightscout Overview
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/new_user/" class="md-nav__link">
-        New Nightscout
+      <a href="../../nightscout/new-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    New Nightscout
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/update_user/" class="md-nav__link">
-        Nightscout with Loop
+      <a href="../../nightscout/update-user/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout with Loop
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/troublehoot/" class="md-nav__link">
-        Nightscout Troubleshooting
+      <a href="../../nightscout/troubleshoot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Troubleshooting
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/remote-overrides/" class="md-nav__link">
-        Remote Commands
+      <a href="../../nightscout/ns-crossref/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nightscout Cross Ref
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../nightscout/ns_crossref/" class="md-nav__link">
-        Nightscout Cross Ref
+      <a href="../../nightscout/remote-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Overview
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/remote-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nightscout/loop-caregiver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    <span translate="no">Loop Caregiver<span>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    
+    
+    
+    
       
       
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-          FAQs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
-          FAQs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
           
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            FAQs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/overview-faqs/" class="md-nav__link">
-        FAQs Overview
+        
+  
+  <span class="md-ellipsis">
+    FAQs Overview
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/safety-faqs/" class="md-nav__link">
-        Safety Tips
+        
+  
+  <span class="md-ellipsis">
+    Safety Tips
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/FAQs/" class="md-nav__link">
-        Loop FAQs
+        
+  
+  <span class="md-ellipsis">
+    Loop FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting/time-change/" class="md-nav__link">
-        Time Change FAQs
+      <a href="../../faqs/time-faqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/omnipod-faqs/" class="md-nav__link">
-        Omnipod FAQs
+        
+  
+  <span class="md-ellipsis">
+    Omnipod FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/cgm-faqs/" class="md-nav__link">
-        CGM FAQs
+        
+  
+  <span class="md-ellipsis">
+    CGM FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/update-faqs/" class="md-nav__link">
-        Update/Rebuild Loop FAQs
+        
+  
+  <span class="md-ellipsis">
+    Update/Rebuild Loop FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqs/new-phone/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    New Phone Tips
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/rileylink-faqs/" class="md-nav__link">
-        RileyLink FAQs
+        
+  
+  <span class="md-ellipsis">
+    RileyLink FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/algorithm-faqs/" class="md-nav__link">
-        Algorithm FAQs
+        
+  
+  <span class="md-ellipsis">
+    Algorithm FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/apple-health-faqs/" class="md-nav__link">
-        Apple Health FAQs
+        
+  
+  <span class="md-ellipsis">
+    Apple Health FAQs
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
   
     <li class="md-nav__item">
       <a href="../../faqs/glossary/" class="md-nav__link">
-        Glossary
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
   
   
   
     <li class="md-nav__item">
       <a href="../../translate/" class="md-nav__link">
-        Translation
+        
+  
+  <span class="md-ellipsis">
+    Translation
+  </span>
+  
+
       </a>
     </li>
   
@@ -2370,19 +3392,40 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#update-loop-using-github-actions" class="md-nav__link">
-    Update Loop using GitHub Actions
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-update" class="md-nav__link">
-    GitHub Build Update
+  <a href="#when-to-update-or-rebuild" class="md-nav__link">
+    When to Update or Rebuild
   </a>
   
-    <nav class="md-nav" aria-label="GitHub Build Update">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-update-or-rebuild" class="md-nav__link">
+    How to Update or Rebuild
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Update or Rebuild">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accept-agreements" class="md-nav__link">
+    Accept Agreements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renew-certificate" class="md-nav__link">
+    Renew Certificate
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#update-fork" class="md-nav__link">
@@ -2392,8 +3435,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-loop" class="md-nav__link">
-    Build Loop
+  <a href="#build-the-loop-app" class="md-nav__link">
+    Build the Loop App
   </a>
   
 </li>
@@ -2418,8 +3461,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-details" class="md-nav__link">
-    GitHub Build Details
+  <a href="#choose-previous-build" class="md-nav__link">
+    Choose Previous Build
+  </a>
+  
+    <nav class="md-nav" aria-label="Choose Previous Build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-test-details" class="md-nav__link">
+    Add Test Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-previous-build" class="md-nav__link">
+    Select a Previous Build
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-loop-app-build-details" class="md-nav__link">
+    The Loop App Build Details
   </a>
   
 </li>
@@ -2433,8 +3503,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regenerate-github-token" class="md-nav__link">
-    Regenerate GitHub Token
+  <a href="#modify-personal-access-token" class="md-nav__link">
+    Modify Personal Access Token
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regenerate-token" class="md-nav__link">
+    Regenerate Token
   </a>
   
 </li>
@@ -2452,56 +3529,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-build-for-dev" class="md-nav__link">
-    GitHub Build for dev
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Build for dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#one-time-changes" class="md-nav__link">
-    One-Time Changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-current-branches" class="md-nav__link">
-    Check Current Branches
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-branch" class="md-nav__link">
-    Add Branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-branch" class="md-nav__link">
-    Update Branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-branch" class="md-nav__link">
-    Build Branch
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-default-branch" class="md-nav__link">
-    Change Default Branch
+  <a href="#build-development-version" class="md-nav__link">
+    Build Development Version
   </a>
   
 </li>
@@ -2521,117 +3550,212 @@
                   
 
 
-  <h1>GitHub Update</h1>
+  <h1>Update/Rebuild with Browser</h1>
 
-<h2 id="update-loop-using-github-actions">Update Loop using <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr><a class="headerlink" href="#update-loop-using-github-actions" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>This is only available with <abbr title="Latest release with major updates">Loop 3</abbr> and Loop development <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<div class="admonition info">
-<p class="admonition-title">Time Estimate</p>
-<p>Build Loop</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p><strong>This page is only relevant when building with a browser.</strong></p>
+<p><strong>For <em>Mac</em>, please see: <a href="../../build/updating/">Update/Rebuild with <em>Mac</em></a></strong></p>
+<details class="info" open="open">
+<summary>Time Estimate (click to open/close)</summary>
+<p>Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</p>
 <ul>
-<li>Start the Build: 5 minutes</li>
-<li>Wait for build to complete and appear in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone<ul>
+<li>5 min: Check <em>Apple</em> account status</li>
+<li>Check if you need to renew certificates (once a year only)</li>
+<li>5 min: Update version if a new one is available</li>
+<li>5 min: Start the Build</li>
+<li>Wait for the build to complete and appear in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone<ul>
 <li>about an hour</li>
-<li>depends on <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>, Apple and <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
+<li>depends on <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em>, <em>Apple</em> and <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
 </ul>
 </li>
 </ul>
-<p>Optional: If you need to update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token</p>
+<p>Once a Year <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></p>
 <ul>
-<li>5 minutes to regenerate token</li>
-<li>5 minutes to update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> Secret for each of your app repositories</li>
+<li>5 min: Clear out expired certificates</li>
+<li>5 min: Generate new certificates</li>
 </ul>
-</div>
-<div class="admonition abstract">
-<p class="admonition-title">Summary</p>
-<p><strong>You must build Loop every 90 days when you use the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> build method - this is a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> requirement.</strong></p>
+</details>
+<details class="abstract" open="open">
+<summary>Page Summary (click to open/close)</summary>
+<p><strong>The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app must be built at least every 90 days when you build with a browser - this is <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> requirement.</strong></p>
+<p>Most users will start at <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a>.</p>
+<p>If your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> has expired, we recommend you update it with <code>No Expiration</code> as explained at <a href="#github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</p>
+<p>If you are running <code>Loop-dev</code>, be sure to review these instructions but modify for the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are using: refer to <a href="../build-dev-browser/">Build <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> dev with Browser</a></p>
+</details>
+<details class="question" open="open">
+<summary>FAQs (click to open/close)</summary>
 <ul>
-<li>The <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token expiration is independent of the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app expiration<ul>
-<li>LoopDocs used to have you set up your token to expire at the same time as <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> but that added an unnecessary burden to the update process</li>
-<li>The new recommendation is that your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token be updated to <code>No Expiration</code></li>
-</ul>
-</li>
-<li>To update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token, start at <a href="#github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a></li>
-<li>Otherwise, start at <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a></li>
-</ul>
-</div>
-<div class="admonition question">
-<p class="admonition-title">FAQs</p>
-<ul>
+<li><strong>"What is an update?"</strong> Anytime you want to change versions or if your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> build is about to expire, follow the instructions on this page.</li>
+<li><strong>"Do I delete my old <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app first?"</strong> Definitely <strong>not</strong>! If you keep your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app on your phone, your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> settings (and existing pod) will continue to work the same after the update. Seamless.</li>
+<li><strong>"Do I need to start a new pod when I update?"</strong> No. Your existing pod session will continue seamlessly if you are using the same Developer Account as the last time you built.</li>
+<li><strong>"What if I'm using a new/different developer account?"</strong> If you aren't building with the same developer account used when your existing app was built, then you will be installing a brand new (second) <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app on your phone. Your existing pod won't work with the new app, so you might want to time this transition when you are due to change pods. Delete the old app once you get the new one all set up.</li>
 <li><strong>Do I need a computer?</strong> No.</li>
-<li><strong>Can I do this on my phone?</strong> Yes, especially after you update your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> token to <code>No Expiration</code>.</li>
-<li><strong>Did the directions change?</strong> Yes. We now recommend you select a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token that never expires. It simplifies the build every 90-day process significantly.</li>
-<li><strong>How do I set my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access token to never expire?</strong> See this section <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a>.</li>
-<li><strong>What happens to my existing builds when I change my <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token?</strong> Nothing. The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> only affect future builds. Previous build will be available for the full 90 days.</li>
+<li><strong>Can I do this on my phone?</strong> Yes, especially after you update your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> token to <code>No Expiration</code>.</li>
+<li><strong>Did the directions change?</strong> Yes. We now recommend you select a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token that never expires and supports automatic update and rebuild when that feature is released. It simplifies the build every 90-day process significantly.</li>
+<li><strong>How do I set my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> to never expire and to support the automatic rebuild feature?</strong> See this section <a href="#regenerate-token">Regenerate Token</a>.</li>
+<li><strong>What happens to my existing builds when I change my <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token?</strong> Nothing. The <code><abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></code> only affect future builds. Previous build are available for the full 90 days.</li>
+<li><strong>Is there anything I have to do once a year?</strong> Yes. Once a year you need to get a new <code>Distribution Certificate</code>. These only last one year. See this section <a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a></li>
 </ul>
-</div>
-<h2 id="github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update<a class="headerlink" href="#github-build-update" title="Anchor link to this Header on this Page">&para;</a></h2>
+</details>
+<h2 id="when-to-update-or-rebuild">When to Update or Rebuild<a class="headerlink" href="#when-to-update-or-rebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Under ordinary circumstances, you do not <em>have to</em> rebuild or update your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app until <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> forces you to (90 days). However, there is no harm in building more frequently.</p>
+<ul>
+<li>You control when the new app is installed on your phone, refer to: <a href="../gh-deploy/#disable-automatic-install-from-testflight">Install on Phone: Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
+<li>You always want a build available in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app<ul>
+<li>You can use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to quickly install the app if you loose or break your phone and need to replace it</li>
+<li>You can use <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> to quickly install the app if someone accidentally deletes the app from your phone</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-update-or-rebuild">How to Update or Rebuild<a class="headerlink" href="#how-to-update-or-rebuild" title="Anchor link to this Header on this Page">&para;</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Summary of Update Steps</p>
 <ul>
-<li><a href="#update-fork">Update Fork</a></li>
-<li><a href="#build-loop">Build Loop</a></li>
-<li><a href="#wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></a></li>
+<li><a href="#accept-agreements">Accept Agreements</a></li>
+<li><a href="#renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr></a> <strong>(once a year)</strong></li>
+<li><a href="#update-fork">Update <code>Fork</code></a></li>
+<li><a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
+<li><a href="#wait-for-testflight">Wait for <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a></li>
 <li><a href="#install-or-confirm-installation">Install or Confirm Installation</a></li>
 </ul>
+<p>Ignore the email that says you need to fix "issues" in your app. You are not selling the app in the app store; so no action is required. The app you built is for personal use for you or a family member.</p>
 </div>
-<h3 id="update-fork">Update Fork<a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Open <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> in your browser (sign in if needed) and select your LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> from your repositories list.</p>
-<p>Look to see if your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date.</p>
+<h3 id="accept-agreements">Accept Agreements<a class="headerlink" href="#accept-agreements" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Sign in to your <a href="https://developer.apple.com/account">Apple Developer account</a>. If there are agreements you have not accepted, you will get errors when you try to Build that indicate your <em>Apple</em> <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> are incorrect - that is very unlikely. You may also need to update your credit card information if it has changed, for example, if there is a new expiration date.</p>
 <ul>
-<li>When you go to your <abbr title="a copy of code in a github repository other than the original">fork</abbr> to do the update, simply sync the <abbr title="version of code within a single repository or workspace repository">branch</abbr> if it says there are updates and you get the latest release (details below graphic)<ul>
-<li>This particular graphic shows the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Yours should show the main <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
+<li>For an update, you do not need to modify the <code><abbr title="One of 6 Secrets: the issuer ID is associated with your Apple Developer ID and never changes">FASTLANE_ISSUER_ID</abbr></code>, <code><abbr title="One of 6 Secrets: Key ID provided when you create an API key in App Store Connect; it is associated with the FASTLANE_KEY">FASTLANE_KEY_ID</abbr></code> or <code><abbr title="One of 6 Secrets: Really long key (several lines); it and FASTLANE_KEY_ID are generated together">FASTLANE_KEY</abbr></code></li>
+<li>Check your <em>Apple</em> Developer account for agreements, then continue</li>
+</ul>
+<p>If you need detailed instructions, click on this <a href="https://support.pushpay.com/s/article/Accepting-the-Apple-Program-License-Agreement"><code>Apple Program License Agreement</code> Help Page</a>.</p>
+<ul>
+<li>Accept the <code>Apple Program License Agreement</code> (only)<ul>
+<li>You do NOT need to accept anything related to the <code>Paid Applications Schedule Agreement</code></li>
+<li>That is only required when you sell an app through the <code>App Store</code></li>
 </ul>
 </li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Wait After You Agree</p>
+<p>It typically takes 15 minutes before your updated agreement is available so you can complete your build.</p>
+<p>If your build with browser fails, wait longer. An hour wait was reported by one person.</p>
+</div>
+<h3 id="renew-certificate">Renew <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr><a class="headerlink" href="#renew-certificate" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p><strong>Once a year, you need to renew your <code>Distribution Certificate</code> to continue using the build with browser method.</strong></p>
+<blockquote>
+<p>Note that these steps should become more automated, but for now, here's what you need to do when you get an email from Apple informing you that "Your <code>Distribution Certificate</code> will no longer be valid in 30 days."</p>
+</blockquote>
+<p><strong>Apps in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> that have not already expired are not affected by revoking the certificate.</strong></p>
+<ul>
+<li>Apps installed on the phone continue to run</li>
+<li>Apps can be installed from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> onto a phone up through the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date</li>
+<li>You just cannot build a new app until a new <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> is generated</li>
+</ul>
+<details class="question">
+<summary>Do you want to know more? (Click to open/close)</summary>
+<p>This is only a summary - please follow the detailed steps below carefully.</p>
+<ul>
+<li>
+<p>Delete all your <code>Distribution Certificates</code>. Apple only allows you to have 2 of these. So get rid of the old ones so you will be able to create a new one that will last a full year. (Step 1 below.)</p>
+</li>
+<li>
+<p>The <abbr title="Apple certificate is used to sign your iOS or Mac apps - tied to but different from your permanent Developer ID">Certificate</abbr> in question is embedded in your <code>Match-Secrets repository</code>. In order to proceed, you need to remove the old certificate from <code>Match-Secrets</code>. Later this will be automated and can be done without modifying your <code>Match-Secrets repository</code>, but for now the easiest way to do that is to just delete the <code>certs/distribution</code> folder in your current <code>Match-Secrets repository</code>.</p>
+</li>
+<li>
+<p>Finally, for every app that you build with this method, you need to run <code>Create Certificates</code> for that app. (Step 4 below.)</p>
+</li>
+</ul>
+</details>
+<h4 id="manual-steps-to-renew-your-distribution-certificate">Manual Steps to Renew Your <code>Distribution Certificate</code><a class="headerlink" href="#manual-steps-to-renew-your-distribution-certificate" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ol>
+<li>Use this link to view your <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer Certificates</a><ul>
+<li>Carefully examine the <code>Type</code> column - do <strong>not</strong> delete a <code>Development Certificate</code></li>
+<li>Click each row that has a <code>Distribution Certificate</code> and revoke it</li>
+<li>You will get an email informing you the certificate was revoked</li>
+</ul>
+</li>
+<li>Navigate to your <code>Match-Secrets</code> Repository<ul>
+<li>You can do this several ways, but the <abbr title="website address (Uniform Resource Locator)">URL</abbr> address will be <code>https://github.com/username/Match-Secrets</code> where <code>username</code> is replaced by your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> username</li>
+</ul>
+</li>
+<li>
+<p>Delete the <code>certs/distribution</code> folder using these instructions. The <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below indicates the places to click with numbered red rectangles:</p>
+<ul>
+<li>Frame 1: Click 1 on the folder called <code>certs/distribution</code></li>
+<li>Frame 2: Click 2 and 3 on the three dots in the upper right and then <code>Delete directory</code></li>
+<li>Frame 3: Click 4 and 5 on <code>Commit changes</code> in the upper right and then accept the suggested choice by clicking on <code>Commit changes</code> in the lower right</li>
+</ul>
+<p align="center"><img alt="delete the distributon certs folder in your Match-Secrets repository" src="../img/delete-distr-certs-match-secrets.gif" width="700" /></p>
+</li>
+<li>
+<p>In your <abbr title="a copy of code in a github repository other than the original">fork</abbr> of LoopWorkspace:</p>
+<ul>
+<li>Run the <code>Action</code>: <code>Create Certificates</code></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Other Apps</p>
+<p>If you build other apps using the build with browser method, they have just had their certificates revoked.</p>
+<ul>
+<li>The existing apps you installed from <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> continue working until their <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration date</li>
+<li>You cannot build new versions of the app until you run <code>Create Certificates</code> for that app</li>
+<li>To make sure you don't forget, go ahead and do that for all your other <code>repositories</code> now</li>
+</ul>
+</div>
+<h3 id="update-fork">Update <code>Fork</code><a class="headerlink" href="#update-fork" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Open your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account and select your <code>LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr></code> from your repositories list.</p>
 <p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
 <ul>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date with LoopKit version for that <code>{branch}</code>, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your Loop app in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> is about to expire - in which case, proceed to <a href="#build-loop">Build Loop</a></li>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on <code>Update branch</code></li>
-<li>If your <abbr title="a copy of code in a github repository other than the original">fork</abbr> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually sync and choose to <code>discard changes</code>; you can always customize again after the update</li>
+<li>If your <code>fork</code> is up to date with LoopKit version, you will see the message <code>This branch is up to date with LoopKit/LoopWorkspace:{branch}</code> - there is no need to build again unless your <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> is about to expire - in which case, proceed to <a href="#build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App</a></li>
+<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main</code> and you want to update and build, then click <code>Sync Fork</code> by tapping where the red rectangle is shown in the graphic above, then in the pop-up window, tap on <code>Update branch</code></li>
+<li>If your <code>fork</code> shows a message such as <code>This branch is 3 commits behind LoopKit:main and 4 commits ahead of LoopKit:main</code>; you might need to manually sync and choose to <code>discard changes</code>; you can always customize again after the update</li>
 </ul>
 <div class="admonition question">
 <p class="admonition-title">Building a different <abbr title="version of code within a single repository or workspace repository">branch</abbr></p>
 <p>Do I need to do anything special to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>?</p>
-<p>Yes: please follow instructions at <a href="#github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev</a></p>
+<p>Yes: please follow instructions at <a href="#build-development-version">Build Development Version</a></p>
 </div>
-<h3 id="build-loop">Build Loop<a class="headerlink" href="#build-loop" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>The section continues immediately after the <a href="#update-fork">Update Fork</a> section. Refer to graphic below as you follow the steps to Build Loop.</p>
+<h3 id="build-the-loop-app">Build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App<a class="headerlink" href="#build-the-loop-app" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>Refer to graphic below as you follow the steps to build the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
 <ul>
-<li>Click on the '<abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>' tab</li>
-<li>Select the '4. Build Loop' <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
-<li>If using a mobile browser, be sure to use landscape mode to more closely match how <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> looks on a computer.</li>
+<li>Click on the <code>Actions</code> tab</li>
+<li>Select the <code>4. Build Loop</code> <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> on the left<ul>
+<li>If using a mobile browser, be sure to use landscape mode to more closely match how <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> looks on a computer.</li>
 </ul>
 </li>
-<li>Look on the right and click 'Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr>' to  see the dropdown</li>
+<li>Look on the right and click <code>Run workflow</code> to  see the dropdown</li>
 <li>Click on the green <code>Run workflow</code> button in the dropdown</li>
 <li>Wait ~25 min for the build to complete successfully</li>
-<li>It is then processed by Apple and sent to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> (be patient)</li>
+<li>It is then processed by <em>Apple</em> and sent to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> (be patient)</li>
 </ul>
 <p align="center"><img alt="graphic indicating how to build again" src="../img/github-build-actions-build-again.svg" width="700" /></p>
 <h4 id="what-if-the-build-fails">What if the Build Fails<a class="headerlink" href="#what-if-the-build-fails" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>There are some updates where you need to run some actions before build. If a new release is announced, look to see if there are instructions about this. In those cases, you will probably be told to run Action 2: Add <abbr title="names of modules found on your Apple Developer Identifiers page that are required for GitHub build method">Identifiers</abbr> and Action 3: Create Certificates before Action 4: Build Loop. Those steps are fast and there is no harm in trying them.</p>
-<p>Otherwise, head over to <a href="../gh-errors/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Errors</a>.</p>
-<h3 id="wait-for-testflight">Wait for <abbr title="a method to distribute apps without direct connection">TestFlight</abbr><a class="headerlink" href="#wait-for-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You'll receive an App Store Connect email confirming that the build has completed processing, and a <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> email confirming the new app is ready to test.</p>
+<p>If a new release is announced at <a href="../../version/releases/#current-release">Current Release</a>, look to see if there are instructions about extra steps required with the release. (The release after 3.2.3 will certainly have extra instructions.)</p>
+<p>If you are using the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>, head over to <a href="#build-development-version">Build Development Version</a> for information.</p>
+<p>Otherwise, head over to <a href="../gh-errors/">Errors with Browser</a>.</p>
+<h4 id="apple-email-to-ignore"><em>Apple</em> Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
+<ul>
+<li>You can ignore an email from <em>Apple</em> that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that</li>
+</ul>
+<h3 id="wait-for-testflight">Wait for <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em><a class="headerlink" href="#wait-for-testflight" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>You'll receive an App Store Connect email confirming that the build has completed processing, and a <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> email confirming the new app is ready to test.</p>
 <ul>
 <li>If you get an email that the action failed, then return to your <abbr title="contains project files and each file's revision history">repository</abbr> and look for Build Action error messages<ul>
 <li>Click on the most recent Build job with the red x by it</li>
-<li>If the details show this message, "<a href="../gh-errors/#could-not-install-wwdr-certificate">Could not install WWDR certificate</a>", make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
-<li>Repeat the build (previous step) and it should be fine the next time - that just means Apple did not reply to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> as fast as <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> expected</li>
+<li>If the details show this message, <a href="../gh-errors/#could-not-install-wwdr-certificate"><code>Could not install WWDR certificate</code></a><ul>
+<li>This means <em>Apple</em> did not reply to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> as fast as <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> expected</li>
+<li>Make sure your developer account is in good standing and that there are no agreements that need to be accepted</li>
+<li>Repeat the build (previous step)</li>
 </ul>
 </li>
 </ul>
-<h4 id="apple-email-to-ignore">Apple Email to Ignore<a class="headerlink" href="#apple-email-to-ignore" title="Anchor link to this Header on this Page">&para;</a></h4>
-<ul>
-<li>You can ignore an email from Apple that there are things you must fix in your app - that refers to things to fix before putting that app in the App Store and you will not be doing that</li>
+</li>
 </ul>
-<p>The updated Loop app will show up in your <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on the Looper's phone.</p>
+<p>The updated <abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr> app will show up in your <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the Looper's phone.</p>
 <ul>
 <li>Your new app will have "Expires in 90 days"<ul>
-<li>There may be older builds that are still in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
-<li>It takes time for the update to show up in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app</li>
+<li>There may be older builds that are still in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></li>
+<li>It takes time for the update to show up in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app</li>
 </ul>
 </li>
 <li>You will also see a build number in parentheses, that number increments each build - don't worry about the number</li>
@@ -2639,57 +3763,124 @@
 <div class="admonition tip">
 <p class="admonition-title">Calendar Reminder</p>
 <p>This is a good time to put a calendar reminder in your favorite app.</p>
-<p>Set it up for a few days before the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app will expire.</p>
+<p>Set it up for a few days before the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app will expire.</p>
 </div>
 <h3 id="install-or-confirm-installation">Install or Confirm Installation<a class="headerlink" href="#install-or-confirm-installation" title="Anchor link to this Header on this Page">&para;</a></h3>
 <h4 id="automatic-update-disabled">Automatic Update Disabled<a class="headerlink" href="#automatic-update-disabled" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Option 1: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> disabled for Loop, you choose when to install the app on the phone.</p>
+<p>Option 1: If you chose to <a href="../gh-deploy/#disable-automatic-install-from-testflight">Disable Automatic Install from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em></a>, you control when to install the app on the phone.</p>
 <ul>
-<li>Open <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
-<li>If you are building for a child, follow the <a href="../gh-deploy/#install-testflight-loop-for-child">Install <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Loop for Child</a> instructions again</li>
+<li><strong>This is the recommended option</strong></li>
+<li>Open <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> on your phone and click <code>Install</code> as shown in the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below</li>
+<li>If you are building for a child, follow the <a href="../gh-deploy/#testflight-for-a-child"><em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for a Child</a> instructions again</li>
 </ul>
-<p align="center"><img alt="install Loop from TestFlight" src="../img/testflight-install-loop.gif" width="300" /></p>
+<p align="center"><img alt="install Loop from *TestFlight*" src="../img/testflight-install-loop.gif" width="300" /></p>
 <h4 id="automatic-update-enabled">Automatic Update Enabled<a class="headerlink" href="#automatic-update-enabled" title="Anchor link to this Header on this Page">&para;</a></h4>
-<p>Option 2: If you chose to leave <a href="../gh-deploy/#testflight-automatic-updates"><abbr title="a method to distribute apps without direct connection">TestFlight</abbr> Automatic Updates</a> enabled for Loop, the updated build will be installed over your existing app.</p>
+<blockquote>
+<p>We strongly recommend you toggle off Automatic Updates to allow you to be in full control over when the app is updated. This is even more important if you're using automatic builds from <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> for version 3.3 or later.</p>
+</blockquote>
+<p>Option 2: If you chose to enable Automatic Updates from <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> for the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, the updated build will be installed over your existing app as soon as it uploaded to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>.</p>
 <ul>
-<li>In this case, when you look at the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app on your phone, the app should have installed automatically</li>
+<li>In this case, when you look at the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone, the app should have installed automatically</li>
 <li>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> above, the message will say <code>Open</code> instead of <code>Install</code></li>
 </ul>
-<h2 id="github-build-details"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Details<a class="headerlink" href="#github-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>In the Loop app, once installed on your phone, tap on Settings -&gt; Support -&gt; <abbr title="On github - a formal method to report a problem, either code behavior or documentation">Issue</abbr> Report. The graphic below shows an example of the Build Details included in the report.</p>
+<h2 id="choose-previous-build">Choose Previous Build<a class="headerlink" href="#choose-previous-build" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>If you are a typical user who just builds a single version for yourself or your child, you do not need to read this section.</p>
+<p>This section provides detailed instructions if you want to choose a previous build to install on your phone. Typically, the most recent build is selected but there may be special cases:</p>
 <ul>
-<li>The <code>profileExpiration</code> listed here is irrelevant - the app expires when the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> expiration indicates - a later version of <abbr title="Latest release with major updates">Loop 3</abbr> will probably capture that date and provide a notification in the app; but for now, you must remember<ul>
+<li>You are supporting multiple family members and may build different versions for each</li>
+<li>You want to test a different <code>branch</code> or set of customizations; you can install a previous build once you are done with the test</li>
+</ul>
+<p>This section covers two topics.</p>
+<ol>
+<li>Optional: <a href="#add-test-details">Add Test Details</a> to the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> build</li>
+<li><a href="#select-a-previous-build">Select a Previous Build</a></li>
+</ol>
+<h3 id="add-test-details">Add Test Details<a class="headerlink" href="#add-test-details" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>About half an hour after the build action completes, the new build will appear in the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> screen at this link: <a href="https://appstoreconnect.apple.com/apps">App Store Connect / Apps</a></p>
+<ul>
+<li>Log in if needed</li>
+<li>Select your <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app</li>
+<li>Click on the <code>TestFlight</code> tab to see a screen similar to the graphic below</li>
+</ul>
+<p align="center"><img alt="select a TestFlight build to update" src="../img/testflight-select-build.png" width="700" /></p>
+<p>Select the build to which you wish to add testing notes. When you tap on that icon, it opens a screen similar to that in the next graphic.</p>
+<p align="center"><img alt="add details to your build" src="../img/testflight-test-details.png" width="700" /></p>
+<p>Click inside the box under <strong>Test Details</strong>. Insert the text you want to see on the phone before you install this version of the app. Tap the <code>Save</code> button at upper right and then <code>&lt; <abbr title="operating system used by Apple Mobile devices (iPhone, iPod, iPad)">iOS</abbr> Builds</code> at upper left.</p>
+<p>In this example, the <abbr title="version of code within a single repository or workspace repository">branch</abbr> and <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number are included followed by an indication that this version includes the customizations preferred by this person. Your test details can be as simple as "Use this for Charlie".</p>
+<div class="admonition tip">
+<p class="admonition-title">Commit Number</p>
+<p>If your build includes customizations, your <abbr title="a formal change to files in a repository; each commit has an alphanumeric identifier (SHA-1)">commit</abbr> number will not match what the developer expects to see if you need to ask for help.</p>
+<p>Use this section <a href="../edit-browser/#customization-and-sha-1">Customization and <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr></a> to determine the <abbr title="Secure Hash Algorithm 1; used to generate an alphanumeric code for commits in git (github)">SHA-1</abbr> before customization.</p>
+</div>
+<h3 id="select-a-previous-build">Select a Previous Build<a class="headerlink" href="#select-a-previous-build" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>First open the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on your phone and select the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app.</p>
+<p>Near the bottom of the screen is a row labeled previous builds.</p>
+<ul>
+<li>Tap on the previous builds row</li>
+<li>The available builds are grouped by app version number, choose your desired version</li>
+<li>Typically you choose the most recent build for that version and click Install and then Open after installation completes</li>
+<li>All your settings should remain</li>
+</ul>
+<p>The following graphic shows the view seen in the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app on the phone. By adding test details (as explained in the previous section), the desired build is clear. For most people - they will just use the most recent build. This procedure is useful for those who build often or who support multiple family members.</p>
+<p align="center"><img alt="choose build from TestFlight that has test details" src="../img/testflight-select-with-details.png" width="300" /></p>
+<h2 id="the-loop-app-build-details">The <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> App Build Details<a class="headerlink" href="#the-loop-app-build-details" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>In the <em><abbr title="With a capital L, Loop is one of several do-it-yourself artifical pancreas systems">Loop</abbr></em> app, once installed on your phone, tap on <code>Settings -&gt; Support -&gt; Issue Report</code>. The graphic below shows an example of the Build Details included in the report.</p>
+<ul>
+<li>The <code>profileExpiration</code> listed here is irrelevant - the app expires when the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> expiration indicates<ul>
 <li>Pro Tip: Add a calender reminder for your next build</li>
 </ul>
 </li>
-<li>An app built with <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will display a <code>sourceRoot</code> that starts with <code>/Users/runner/work/LoopWorkspace</code><ul>
-<li>The <code>buildDateString</code> is when the app was built and transferred to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr>, not when it was installed on your phone</li>
-<li>You can use 90 days from this date, as well as the Expires in ## Days on the <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> app, to know when you need to rebuild</li>
+<li>An app built with a browser displays a <code>sourceRoot</code> that starts with <code>/Users/runner/work/LoopWorkspace</code><ul>
+<li>The <code>buildDateString</code> is when the app was built and transferred to <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em>, not when it was installed on your phone</li>
+<li>You can use 90 days from this date, as well as the Expires in ## Days on the <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> app, to know when you need to rebuild</li>
 </ul>
 </li>
 </ul>
 <p align="center"><img alt="graphic indicating build details" src="../img/gh-build-details.png" width="300" /></p>
-<h2 id="github-token"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token<a class="headerlink" href="#github-token" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>If your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token has not expired and you don't want to regenerate it, you don't need this section.</p>
-<p>If you want to follow the new recommendation of using a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token that never expires, you can regenerate the new one at any time.</p>
-<div class="admonition tip">
-<p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></p>
-<p>After you get your new token, immediately add it to your <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run Action 1. Verify <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
-</div>
-<h3 id="regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token<a class="headerlink" href="#regenerate-github-token" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>You can regenerate your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
+<h2 id="github-token"><em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Token<a class="headerlink" href="#github-token" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>Your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> should be configured:</p>
 <ul>
-<li><a href="https://github.com/settings/tokens">Link to access your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token</a></li>
+<li><code>Never expire</code></li>
+<li><code>repo, workflow</code> permission scope</li>
 </ul>
-<p>If you are not logged in to <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> and have not logged in recently, then you may see the authentication screen. Click on the link below, and authenticate if requested by clicking on the green <code>Send SMS</code> button or entering your password.</p>
+<p>If you are not logged in to <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> and have not logged in recently, then you may see the authentication screen when doing the steps below.</p>
+<p>Authenticate if requested by clicking on the green <code>Send SMS</code> button or entering your password.</p>
 <p align="center"><img alt="two-factor authentication for access to tokens" src="../img/gh-sms-access-screen.png" width="300" /></p>
-<p>Once you are authenticated, your screen should be similar to the graphic below. The <code>FastLane Access Token</code> is a clickable link.</p>
+<p>Once you are authenticated, you will have access to view your personal access token.</p>
+<h3 id="modify-personal-access-token">Modify <code>Personal Access Token</code><a class="headerlink" href="#modify-personal-access-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If your <code>Personal Access Token</code> has not expired but does not have the correct permission, you should modify it. Do not regenerate it.</p>
+<p>Click on the link to view your token and compare it to the graphic below.</p>
+<ul>
+<li><a href="https://github.com/settings/tokens">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code></a></li>
+</ul>
+<p align="center"><img alt="access token with correct permissions" src="../img/gh-token-correct-permission.png" width="600" /></p>
+<p>The graphic above has a blue rectangle added to indicate where you should see your token. If yours does not look like this, click on the link (<code>FastLane Access Token</code>) to open a new display. Watch the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below - there are 4 frames, the last one has the Update token button.</p>
+<ol>
+<li>Click on the link (<code>FastLane Access Token</code>) to open a new display</li>
+<li>This example has no <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> or repo checks in it</li>
+<li>Add a check to the <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> box</li>
+<li>Scroll all the way to the bottom of the screen and click on the green <code>Update token</code> button</li>
+</ol>
+<p align="center"><img alt="configure access token permissions" src="../img/update-personal-access-token.gif" width="600" /></p>
+<p>After you click on the <code>Update token</code> button, your <code>FastLane Access Token</code> should now show <code>repo, workflow</code> and look like the earlier graphic above.</p>
+<p>The only reason to regenerate a token is if it is set to expire. Do not do the next section unless you have to.</p>
+<h3 id="regenerate-token">Regenerate Token<a class="headerlink" href="#regenerate-token" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>If your <code>Personal Access Token</code> has expired or has an expiration date, you can regenerate the new one at any time.</p>
+<div class="admonition tip">
+<p class="admonition-title">Update new <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> to <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code></p>
+<p>After you get your new token, immediately add it to your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for any app you build with this method. You don't have to rebuild the app, but it's a good idea to at least run <code>Action 1. Validate Secrets</code> for each <abbr title="contains project files and each file's revision history">repository</abbr> to make sure you did not make a mistake.</p>
+</div>
+<p>You can regenerate your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> <code>Personal Access Token</code> at any time by clicking on the link below. (Right-click, control-click to open in a new browser tab.)</p>
+<ul>
+<li><a href="https://github.com/settings/tokens">Link to access your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> Personal Access Token</a></li>
+</ul>
+<p>The <code>FastLane Access Token</code> is a clickable link.</p>
 <p align="center"><img alt="list of personal access tokens on github" src="../img/gh-token-list.png" width="600" /></p>
 <p>After you click on <code>FastLane Access Token</code> your screen should be similar to the graphic below.</p>
 <div class="admonition question">
-<p class="admonition-title">Your existing <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> builds are fine</p>
-<p>The yellow <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> warning by the <code>Regenerate Token</code> button is for new builds you make in the future.</p>
-<p>Previous builds are still available in <abbr title="a method to distribute apps without direct connection">TestFlight</abbr> and are not affected by this action.</p>
+<p class="admonition-title">Your existing <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> builds are fine</p>
+<p>The yellow <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> warning by the <code>Regenerate Token</code> button is for new builds you make in the future.</p>
+<p>Previous builds are still available in <em><abbr title="a method to distribute apps without direct connection">TestFlight</abbr></em> and are not affected by this action.</p>
 </div>
 <p>Note - selecting the <code>workflow</code> check box below is new. If yours does not show that selection, add it before you click on Regenerate token (red highlight in graphic below).</p>
 <p align="center"><img alt="review of fastlane access token on github" src="../img/gh-token-review.svg" width="600" /></p>
@@ -2700,156 +3891,24 @@
 </ul>
 </li>
 </ul>
-<p>Be sure to change the Expiration from <code>30 days</code> to <code>No Expiration</code>. When you select <code>No Expiration</code> a <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> warning appears. Click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
+<p>Be sure to change the Expiration from <code>30 days</code> to <code>No Expiration</code>. When you select <code>No Expiration</code> a <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> warning appears. Click on the green <code>Regenerate Token</code> button (red highlight in following graphic).</p>
 <p align="center"><img alt="regenerate fastlane access token on github" src="../img/gh-token-no-expiration.svg" width="600" /></p>
 <p>The next screen shows your new token. Copy the token using the copy icon and save it along with your other secret settings.</p>
 <p align="center"><img alt="copy fastlane access token on github" src="../img/gh-token-to-copy.png" width="600" /></p>
-<p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your LoopWorkspace Repository <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr>. (If you build other apps with this method - update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> for all of them right now - do not forget.)</p>
-<h3 id="update-secrets">Update <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>This example is for updating <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in the <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> for your <abbr title="contains project files and each file's revision history">repository</abbr>, but the same method can be applied when changing any Secret.</p>
-<p>This can be done with the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Personal Access Token still in your paste buffer - but to be safe, save the token with your other secret settings. If you lose track, just <a href="#regenerate-github-token">Regenerate <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Token</a> again.</p>
-<p>The graphics and instructions in this section are using a phone. This was done just to prove we weren't kidding when we said you can do it all on your phone. Most people use a computer browser.</p>
-<p>Scroll all the way up to the top of the window to see the hamburger menu, click on it and choose your name and icon (near bottom of the list). Scroll down to the LoopWorkspace <abbr title="contains project files and each file's revision history">repository</abbr> and tap on the link.</p>
-<p>Do a horizontal scroll (required on your phone, probably not on a browser) on the row that starts with Code and ends in Settings and tap on Settings. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <abbr title="a copy of code in a github repository other than the original">fork</abbr> or you need to sign in to your <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> account. You should see <code>username/LoopWorkspace</code> with forked from <code>LoopKit/LoopWorkspace</code> underneath.</p>
-<p>Review the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> below that shows horizontal scroll to find and tap on Settings, then scroll down on the phone to reach "<abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and variables", open the drop down indicator to see <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>.</p>
-<p align="center"><img alt="phone screens showing the repository settings, secrets and actions" src="../img/phone-with-settings.gif" width="300" /></p>
-<p>After tapping on Settings -&gt; <abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr> and Variables -&gt; <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr>, keep scrolling on the same screen, past the Action secrets / New <abbr title="contains project files and each file's revision history">repository</abbr> secret row, until you see your Repository secrets list as shown in the next <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr>.</p>
-<p align="center"><img alt="phone screen showing repository secrets list" src="../img/phone-secret-list.gif" width="300" /></p>
-<p>When you see the secret, <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, tap on the pencil and then scroll down until you see the <abbr title="a custom application for the GitHub Actions platform that performs a complex but frequently repeated task; specifically used to build Loop from a browser">Actions</abbr> secrets / Update secret dialog as shown in the next graphic. Paste your new token into the Value section and tap Update Secret.</p>
-<p align="center"><img alt="update secret dialog" src="../img/update-secret-dialog.png" width="300" /></p>
-<p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#github-build-update"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build Update</a> instructions to start a new build.</p>
-<h2 id="github-build-for-dev"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Build for dev<a class="headerlink" href="#github-build-for-dev" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>You can build any desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> (available at LoopKit/LoopWorkspace) using the <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> Browser build method. This section is suitable if you have already built either dev or main <abbr title="version of code within a single repository or workspace repository">branch</abbr> using the <a href="../gh-first-time/"><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> First-Time</a> instructions.</p>
-<p><strong>No matter the method used to build Loop for any <abbr title="version of code within a single repository or workspace repository">branch</abbr> other than main, you are testing development code. Please read this link now before continuing.</strong></p>
-<ul>
-<li><strong><a href="../../version/development/#whats-going-on-in-the-dev-branch">What's going on in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr></a></strong></li>
-</ul>
-<p>The graphics show the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>. If you want a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, just substitute that <abbr title="version of code within a single repository or workspace repository">branch</abbr> name for dev.</p>
-<div class="admonition tip">
-<p class="admonition-title">Overview of what you will do</p>
+<p>The next step is to update <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in your <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. (If you build other apps with this method - update the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> for all of them right now - do not forget.)</p>
+<h3 id="update-secrets">Update <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code><a class="headerlink" href="#update-secrets" title="Anchor link to this Header on this Page">&para;</a></h3>
+<p>This example is for updating <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> in the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code> for your <code>repository</code>, but the same method can be applied when changing any of the <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>.</p>
+<p>Open the <code>repository</code> for which you will update <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. On the far right is a Settings selection. If you don't see Settings (if last item on row is Insights), then you are <strong>not</strong> on your <code>fork</code> or you need to sign in to your <em><abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr></em> account. You should see <code>username/LoopWorkspace</code> with <code>forked</code> from <code>LoopKit/LoopWorkspace</code> underneath.</p>
+<p>Refer to the <abbr title="Graphics Interchange Format (GIF) can be used for small animations and low-resolution video clips">GIF</abbr> for help. There are 3 frames.</p>
+<p align="center"><img alt="screen showing repository secrets list" src="../img/update-secret-gh-pat.gif" width="500" /></p>
 <ol>
-<li>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> must have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want<ul>
-<li>You will either add it or make sure it is up to date</li>
-<li>You cannot just rename your existing <abbr title="version of code within a single repository or workspace repository">branch</abbr> to dev - you must get the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> from LoopKit</li>
-</ul>
-</li>
-<li>When you select the action <code>4. Build Loop</code> and then click on the <code>Run Workflow</code> dropdown, you must select <code>dev</code> there before clicking the green <code>Run workflow</code> button - see <a href="#build-branch">Build Branch</a></li>
+<li>Tap on Settings, then scroll down until you see <code>Secrets and variables</code> on the left side and click on the drop down indicator to display <code>Actions</code>.</li>
+<li>Keep scrolling on the same screen, past the <code>Action secrets / New repository secret</code> row, until you see the list of your current <code><abbr title="a method to securely embed personal information into your fork of LoopWorkspace to enable GitHub to have access required to build Loop">Secrets</abbr></code>. </li>
+<li>Click on the <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr>, tap on the pencil and enter the new token in the form. Click on Update Secret to complete the action.</li>
 </ol>
-</div>
-<h3 id="one-time-changes">One-Time Changes<a class="headerlink" href="#one-time-changes" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>There were two changes in the dev <abbr title="version of code within a single repository or workspace repository">branch</abbr> that require special, one-time actions.</p>
-<ol>
-<li>Libre support was added to dev (03 July 2023) using the LibreTransmitter code<ul>
-<li>This requires (one-time) that the <code>Actions</code> for <code>2. Add Identifiers</code> and <code>3. Create Certificates</code> be run before attempting <code>4. Build Loop</code></li>
-<li>The LibreTransmitter code requires <code>Near Field Communication</code> and doing these steps adds automatically</li>
-</ul>
-</li>
-<li>Automatic update and automatic monthly build was added to dev (13 July 2023)<ul>
-<li>Once a month, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will attempt to update and build Loop from your <code>default branch</code> using the instructions in the <code>Action: 4. Build Loop</code> (<code>build_loop.yml</code> file) and send the new app to <abbr title="a method to distribute apps without direct connection">TestFlight</abbr></li>
-<li>As part of this monthly build, <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> will check to see if updates are required for your <code>default branch</code></li>
-<li>When updates are not required, it just builds the app</li>
-<li>When updates are required:<ul>
-<li>If it can figure out how to do the <code>sync</code> automatically, it does so</li>
-<li>If it cannot figure out how to do the <code>sync</code> automatically, the <code>Action</code> to <code>4. Build Loop</code> will fail and you will need to take manual steps</li>
-</ul>
-</li>
-<li>You will get an email that the <code>Build</code> either succeeded or failed</li>
-</ul>
-</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Automatic Update Requirements</p>
-<p>To enable the automatic update and rebuild, two steps are required. These are one-time steps.</p>
-<ul>
-<li>The <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr> must be updated (not regenerated) to add <code>workflow</code><ul>
-<li>Examine your <a href="https://github.com/settings/tokens"><code>FastLane Access Token</code></a></li>
-<li>If it says <code>repo, workflow</code>, then no further action is needed for your <abbr title="One of 6 Secrets: Generated with your GitHub account; set it to never expire">GH_PAT</abbr></li>
-<li>If it say <code>repo</code> only, then click on the <code>FastLane Access Token</code> link, click to add a check to the <code>workflow</code> box and scroll all the way down to select the green <code>Update token</code> button</li>
-</ul>
-</li>
-<li>A new <abbr title="version of code within a single repository or workspace repository">branch</abbr> called <code>alive</code> must be created from the LoopKit <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr><ul>
-<li>Follow the directions at <a href="#add-branch">Add Branch</a>, except this time, you will type <code>alive</code> in the empty <abbr title="version of code within a single repository or workspace repository">branch</abbr> name that you connect to <code>LoopKit/LoopWorkspace</code> <code>dev</code> <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>You will not use the <code>alive</code> for anything directly, but it must exist for the automatic update to function</li>
-</ul>
-</li>
-</ul>
-</div>
-<h3 id="check-current-branches">Check Current Branches<a class="headerlink" href="#check-current-branches" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Your LoopWorkspace <abbr title="a copy of code in a github repository other than the original">fork</abbr> is at <code>https://github.com/username/LoopWorkspace</code> where you substitute your actual <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr> <code>username</code>. You need to be logged into <abbr title="an online service for storing repositories, accessible from a browser">GitHub</abbr>. Review the graphic below as you go through the steps.</p>
-<ol>
-<li>Click on the Branches icon to display the branches as shown in the lower half of the graphic below:<ul>
-<li>If the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want is not listed, then continue with Step 2</li>
-<li>Otherwise, skip ahead to <a href="#update-branch">Update Branch</a></li>
-</ul>
-</li>
-<li>Click on the <code>New branch</code> button and follow the <a href="#add-branch">Add Branch</a> steps</li>
-</ol>
-<p align="center"><img alt="steps to add a branch" src="../img/add-branch-01.svg" width="700" /></p>
-<h3 id="add-branch">Add Branch<a class="headerlink" href="#add-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Each step in the list below matches with the number in the graphic. In the top half of the graphic, the left side shows the initial display and the right side shows the display after making the indicated selections:</p>
-<ol>
-<li>Click on the drop down menu labeled 1 in the graphic and choose LoopKit/LoopWorkspace as show in the top right graphic</li>
-<li>Click on the drop down menu labeled 2 in the graphic and choose dev</li>
-<li>Click on the Branch name box labeled 3 in the graphic and type dev<ul>
-<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> name in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> should always match the <abbr title="version of code within a single repository or workspace repository">branch</abbr> name you are adding; check that you type it correctly</li>
-</ul>
-</li>
-<li>Review the dialog items to make sure everything is correct and then tap on Create <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-</ol>
-<p align="center"><img alt="steps to add a branch continued" src="../img/add-branch-02.svg" width="700" /></p>
-<h3 id="update-branch">Update Branch<a class="headerlink" href="#update-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>Tap the <code>Code</code> button (upper left) and ensure this <abbr title="version of code within a single repository or workspace repository">branch</abbr> in your <abbr title="a copy of code in a github repository other than the original">fork</abbr> is up to date.</p>
-<ul>
-<li>Select the desired <abbr title="version of code within a single repository or workspace repository">branch</abbr> in the dropdown menu (this graphic shows dev <abbr title="version of code within a single repository or workspace repository">branch</abbr>)</li>
-<li>If the message indicates this <abbr title="version of code within a single repository or workspace repository">branch</abbr> is "behind", tap on the sync <abbr title="a copy of code in a github repository other than the original">fork</abbr> button and then the Update <abbr title="version of code within a single repository or workspace repository">branch</abbr> button</li>
-</ul>
-<p align="center"><img alt="message displayed when your fork of LoopWorkspace is behind LoopKit version" src="../img/github-build-check-fork-status.svg" width="700" /></p>
-<h3 id="build-branch">Build Branch<a class="headerlink" href="#build-branch" title="Anchor link to this Header on this Page">&para;</a></h3>
-<p>If you want a <abbr title="version of code within a single repository or workspace repository">branch</abbr> to be the one you build all the time, you may choose to <a href="#change-default-branch">Change Default Branch</a>. This is not necessary except for special cases.</p>
-<p>If you have one <abbr title="version of code within a single repository or workspace repository">branch</abbr> as default, for example main, and choose to build a different <abbr title="version of code within a single repository or workspace repository">branch</abbr>, there is an extra step when you Build Loop. Refer to step 4 in the graphic below. Use the <abbr title="version of code within a single repository or workspace repository">branch</abbr> dropdown menu to select the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want before hitting the green Run <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> button.</p>
-<p align="center"><img alt="build loop using github actions" src="../img/action-04-build-loop.svg" width="700" /></p>
-<h2 id="change-default-branch">Change Default Branch<a class="headerlink" href="#change-default-branch" title="Anchor link to this Header on this Page">&para;</a></h2>
-<p>There can be several reasons why you would change your default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<ul>
-<li>It can be convenient to have the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you build most be configured as the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>The <abbr title="version of code within a single repository or workspace repository">branch</abbr> you want to build has a different <abbr title="a set of instructions to GitHub to perform an action; the instruction files are found in the .github/workflows folder of the repository">workflow</abbr> than your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> (not typical)<ul>
-<li>In this case, you <strong>must</strong> modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr></li>
-<li>Check the zulipchat conversation about the <abbr title="version of code within a single repository or workspace repository">branch</abbr> you are testing to see if it is necessary to make it default</li>
-</ul>
-</li>
-</ul>
-<p>These are the steps to modify the default <abbr title="version of code within a single repository or workspace repository">branch</abbr>.</p>
-<p>For this example, we show how to change from a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>main</code> to a default <abbr title="version of code within a single repository or workspace repository">branch</abbr> of <code>dev</code>. Note - only the owner of the <abbr title="contains project files and each file's revision history">repository</abbr> can take this action and they must be logged in. Otherwise the Settings tab does not appear.</p>
-<p>For the numbered steps below, refer to the graphic found under each group of steps.</p>
-<ol>
-<li>
-<p>Click on the Settings Icon near the top right of your LoopWorkspace</p>
-<ul>
-<li>You may need to scroll down to see the Default Branch as shown in the graphic - do not tap on the Branches tab to the left under Code and Automation</li>
-</ul>
-<p align="center"><img alt="show default branch" src="../img/gh-settings-branch-01.svg" width="700" /></p>
-</li>
-<li>
-<p>To the right of the default <abbr title="version of code within a single repository or workspace repository">branch</abbr> name there is a pencil and a left-right arrow icon</p>
-<ul>
-<li>Tap on the left-right arrow icon to bring up the <code>Switch default branch to another branch</code> dialog</li>
-</ul>
-</li>
-<li>Click on the dropdown next to the current default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>main</code></li>
-<li>Select the desired default <abbr title="version of code within a single repository or workspace repository">branch</abbr>, in this example, <code>dev</code></li>
-<li>
-<p>Click on the <code>Update</code> button</p>
-<p align="center"><img alt="modify default branch" src="../img/gh-settings-branch-02.svg" width="700" /></p>
-</li>
-<li>
-<p>You will be presented with an are-you-sure question.</p>
-<ul>
-<li>Click on the red <code>I understand, update the default branch.</code> button</li>
-</ul>
-<p align="center"><img alt="confirm default branch" src="../img/gh-settings-branch-03.svg" width="400" /></p>
-</li>
-</ol>
-<p>Your default <abbr title="version of code within a single repository or workspace repository">branch</abbr> has been changed.</p>
+<p>Scroll all the way to the top of the screen and tap on your LoopWorkspace link. Then follow the <a href="#how-to-update-or-rebuild">How to Update or Rebuild</a> instructions to start a new build.</p>
+<h2 id="build-development-version">Build Development Version<a class="headerlink" href="#build-development-version" title="Anchor link to this Header on this Page">&para;</a></h2>
+<p>The information to build a development (<code>dev</code> or any other <abbr title="version of code within a single repository or workspace repository">branch</abbr>) has been moved to a new page: <a href="../build-dev-browser/">Build dev with Browser</a></p>
 
 
 
@@ -2863,9 +3922,10 @@
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -2876,8 +3936,9 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../gh-deploy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitHub Deploy" rel="prev">
+          <a href="../gh-deploy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install on Phone">
             <div class="md-footer__button md-icon">
+              
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
             <div class="md-footer__title">
@@ -2885,23 +3946,24 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                GitHub Deploy
+                Install on Phone
               </div>
             </div>
           </a>
         
         
           
-          <a href="../gh-errors/" class="md-footer__link md-footer__link--next" aria-label="Next: GitHub Errors" rel="next">
+          <a href="../automatic/" class="md-footer__link md-footer__link--next" aria-label="Next: Automatic Update &amp; Build">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                GitHub Errors
+                Automatic Update & Build
               </div>
             </div>
             <div class="md-footer__button md-icon">
+              
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
             </div>
           </a>
@@ -2930,10 +3992,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.annotate", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
